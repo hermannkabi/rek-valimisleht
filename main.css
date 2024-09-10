@@ -115,15 +115,81 @@ button:hover .arrow{
 }
 
 .section{
-    width: calc(100vw - 20%);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-inline: 10%;
 }
 
 .section-title{
     color: #537074;
     font-size: 56px;
+}
+
+
+.promise{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    margin-block: 72px;
+    cursor: pointer;
+}
+
+.promise.reverse{
+    flex-direction: row-reverse;
+}
+
+.promise-img{
+    height: 250px;
+    aspect-ratio: 1.7;
+    object-fit: cover;
+    border-radius: 24px;
+    transition: border-radius 100ms linear;
+}
+
+.promise:hover .promise-img{
+    border-radius: 0;
+}
+
+.arrow{
+    transition: transform 100ms linear;
+}
+
+.promise:hover .arrow{
+    transform: translateX(12px);
+}
+
+.promise-text h2{
+    font-size: 36px;
+}
+
+.promise-text p{
+    max-width: 400px;
+    font-size: 24px;
+}
+
+.about-text{
+    font-size: 28px;
+    width: 50%;
+}
+
+.footer{
+    background-color: #537074;
+    color: white;
+    margin: -16px;
+    padding: 24px 10%;
+}
+
+.footer p{
+    margin-block: 0;
+    font-size: 20px;
+}
+
+.default-text{
+    font-size: 36px;
+}
+
+.section-promise{
+    font-size: 36px;
+    width: 60%;
 }
 
 @media only screen and (max-width: 600px){
@@ -136,6 +202,10 @@ button:hover .arrow{
         position: absolute;
         bottom: 8px;
         left: 8px;
+    }
+
+    .main-greeting-promise{
+        width: 100%;
     }
 
     .navbar .links{
@@ -166,10 +236,37 @@ button:hover .arrow{
     .section{
         position: static;
         transform: none;
+        padding: 0;
     }
 
     .section-title{
         font-size: 42px;
         scale: 0.95;
+    }
+
+    .promise, .promise.reverse{
+        flex-direction: column;
+    }
+
+    .promise-img{
+        width: calc(100vw - 32px);
+    }
+
+    .about-text{
+        width: 100%;
+        margin-inline: 8px;
+    }
+
+    .section-promise{
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .section-promise p{
+        margin-inline: 8px;
+    }
+
+    .footer{
+        padding-inline: 24px;
     }
 }
