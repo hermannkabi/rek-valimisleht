@@ -128,9 +128,17 @@ button:hover .arrow{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 32px;
-    margin-block: 72px;
+    gap: 75px;
+    margin-block: 200px;
     cursor: pointer;
+}
+
+.promise h2{
+    text-transform: none;
+}
+
+.promise-title{
+    margin-bottom: -150px;
 }
 
 .promise.reverse{
@@ -162,7 +170,7 @@ button:hover .arrow{
 }
 
 .promise-text p{
-    max-width: 400px;
+    max-width: 60%;
     font-size: 24px;
 }
 
@@ -246,6 +254,16 @@ button:hover .arrow{
 
     .promise, .promise.reverse{
         flex-direction: column;
+        gap: 8px;
+        margin-block: 64px;
+    }
+
+    .promise-title{
+        margin-bottom: -50px;
+    }
+
+    .promise p{
+        max-width: 100%;
     }
 
     .promise-img{
@@ -268,5 +286,9 @@ button:hover .arrow{
 
     .footer{
         padding-inline: 24px;
+    }
+
+    .promise .arrow{
+        display: none;
     }
 }
