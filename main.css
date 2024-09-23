@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .background-image{
-    height: 100vh;
+    height: max(100vh, 400px);
     width: 100vw;
     position: absolute;
     top: 0;
@@ -200,7 +200,7 @@ button:hover .arrow{
     width: 60%;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     .main-greeting{
         flex-direction: column-reverse;
         position: static;
