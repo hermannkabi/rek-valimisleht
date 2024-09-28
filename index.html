@@ -24,8 +24,10 @@
             <div style="position: relative;">
                 <h1 class="main-title" style="margin-block: 0;">Ernst Pallase</h1>
                 <h2 class="main-title" style="margin-block: 0; color: #343434;">Emma Priisaar</h2>
+                <p class="about-text" style="color: rgb(66, 66, 66);">Kandidaat nr 1</p>
                 <div class="space"></div>
-                <button onclick="document.getElementById('programm').scrollIntoView()">Vaata edasi <img class="arrow" src="assets/arrow-right.png" alt=""></button>
+                <!-- TODO: ASENDA SIIN LINK ÕIGE INSTA KONTO OMAGA -->
+                <button onclick="window.location.href = 'https://instagram.com';">Instagram <img class="arrow" src="assets/arrow-right.png" alt=""></button>
             </div>
 
             <div style="position: relative;" class="quote">
@@ -204,7 +206,203 @@
 
     <div class="section" id="meist">
         <h1 class="section-title">MEESKOND</h1>
-        <p class="about-text">Siia tuleb erinevate komisjoniliikmekandidaatide nimekiri.</p>
+
+        <!-- Abiks komisjonide koosseisude muutmisel -->
+        <!-- 1. Nimede lisamiseks/kustutamiseks tuleb lisada/kustutada div klassiga name (nt alates <div class="name chairman"> kuni selle elemendi sulgeva tag'ini) -->
+        <!-- 2. Esimeeste puhul lisa name klassile juurde chairman (paneb automaatselt lehel Esimees kõrvale) -->
+        <!-- 3. Aseesimeeste puhul jäta klass lisamata -->
+        <!-- 4. Kui inimene pole ei esimees ega aseesimees, saad tiitli eemaldada, lisades klassi notitle (vt nt Hermanni nime juures) -->
+        <!-- 5. Pildid tuleb panna kausta assets/inimesed ja neile siin koodis viidata /assets/inimesed/faili_nimi.jpg (vt Hermanni näidet) -->
+        <!-- 6. Komisjonide lisamiseks/eemaldamiseks lisa/eemalda div klassiga commission -->
+
+        <!-- Näited on koodi sees ka olemas -->
+
+
+        <div class="commissions" style="padding-inline: 10%;">
+
+            <!-- Kui tahad komisjoni lisada, kopeeri alates siit -->
+            <div class="commission">
+                <h2><span>Spordi</span><br><span>komisjon</span></h2>
+                <div class="names" >
+                    <!-- chairman siin lisab tiitli Esimees -->
+                    <div class="name chairman">
+                        <img src="" alt="">
+                        <p>Kristjan Liiv</p>
+                    </div>
+
+                    <!-- Nime lisamiseks kopeeri alates siit -->
+                    <div class="name">
+                        <img src="" alt="">
+                        <p>Sander Must</p>
+                    </div>
+                    <!-- Nime lisamiseks kopeeri siiamaani -->
+
+                    <!-- Siin ei ole name kõrval ühtegi klassi - kuvatakse aseesimees -->
+                    <div class="name">
+                        <img src="" alt="">
+                        <p>Grete Saue</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Spordikomisjoni kopeerimiseks kopeeri siiamaani -->
+
+            <div class="commission">
+                <h2><span>Kultuuri</span><br><span>komisjon</span></h2>
+                <div class="names" >
+                    <div class="name chairman">
+                        <img src="" alt="">
+                        <p>Helena Katariina Tõnise</p>
+                    </div>
+
+                    <div class="name">
+                        <img src="" alt="">
+                        <p>Eliise Kirjanen</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commission">
+                <h2><span>Välis</span><br><span>komisjon</span></h2>
+                <div class="names" >
+                    <div class="name chairman">
+                        <img src="" alt="">
+                        <p>Ingrid Hints</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commission">
+                <h2><span>Sise</span><br><span>komisjon</span></h2>
+                <div class="names" >
+                    <div class="name chairman">
+                        <img src="" alt="">
+                        <p>Margaret Filippov</p>
+                    </div>
+
+                    <div class="name chairman">
+                        <img src="" alt="">
+                        <p>Kaisa Vaher</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commission">
+                <h2><span>Meedia</span><br><span>komisjon</span></h2>
+                <div class="names" >
+                    <!-- notitle siin eemaldab igasuguse tiitli -->
+                    <div class="name notitle">
+                        <img src="" alt="">
+                        <p>Marie Tõnise</p>
+                    </div>
+
+                    <div class="name notitle">
+                        <img src="" alt="">
+                        <p>Saskia Tiivas</p>
+                    </div>
+
+                    <div class="name notitle">
+                        <img src="" alt="">
+                        <p>Marily Truusalu</p>
+                    </div>
+
+                    <div class="name notitle">
+                        <img src="" alt="">
+                        <p>Katleen Kahre</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commission">
+                <h2><span>Finants</span><br><span>juht</span></h2>
+                <div class="names" >
+                    <div class="name notitle">
+                        <img src="" alt="">
+                        <p>Taavi Tomann</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commission">
+                <h2><span>IT</span><br><span>tiim</span></h2>
+                <div class="names" >
+                    <div class="name notitle">
+                        <img src="/assets/inimesed/hermann.jpg" alt="">
+                        <p>Hermann Käbi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commission">
+                <h2><span>Kampaania</span><br><span>tiim</span></h2>
+                <div class="names" >
+                    <div class="name notitle">
+                        <p>Robin Helm</p>
+                    </div>
+                    
+                    
+                    <div class="name notitle">
+                        <p>Ida Sofia Fromm</p>
+                    </div>
+                    
+                    
+                    <div class="name notitle">
+                        <p>Mirtel Kaber</p>
+                    </div>
+                    
+                    
+                    <div class="name notitle">
+                        <p>Johan Lippus</p>
+                    </div>
+                    
+                    
+                    <div class="name notitle">
+                        <p>Samuel Urb</p>
+                    </div>
+                    
+                    
+                    <div class="name notitle">
+                        <p>Oskar Tiits</p>
+                    </div>
+                    
+                    
+                    <div class="name notitle">
+                        <p>Jasper Keskpaik</p>
+                    </div>
+                    
+                    
+                    <div class="name notitle">
+                        <p>Artur Severev</p>
+                    </div>
+                    
+                    
+                    <div class="name notitle">
+                        <p>Norah Põder</p>
+                    </div>
+                    
+                    
+                    <div class="name notitle">
+                        <p>Ingel Kalamees</p>
+                    </div>
+                    
+                    
+                    <div class="name notitle">
+                        <p>Kaarel Rodima</p>
+                    </div>
+                    
+                    
+                    <div class="name notitle">
+                        <p>Karl August Vaher</p>
+                    </div>
+                    
+                    
+                    <div class="name notitle">
+                        <p>Karl Sören Tamm</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
 
         <div class="space"></div>
     </div>
@@ -212,7 +410,7 @@
     <div class="footer">
         <p><b>REK presidendivalimised 2024</b></p>
         <br>
-        <p>Ernst Pallase & Emma Priisaar <br>kandidaat nr X</p>
+        <p>Ernst Pallase & Emma Priisaar <br>kandidaat nr 1</p>
         <br><br>
         <p style="color: darkgrey;">&copy; 2024</p>
     </div> 

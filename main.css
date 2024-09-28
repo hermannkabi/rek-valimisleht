@@ -203,6 +203,73 @@ button:hover .arrow{
     width: 60%;
 }
 
+.commission{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+    margin-block: 64px;
+}
+
+.commission:nth-of-type(2n){
+    flex-direction: row-reverse;
+}
+
+.commission h2{
+    display: inline-block;
+    text-align: center;
+}
+
+.commission h2 span:nth-of-type(1){
+    color: #537074;
+    font-size: 36px;
+}
+
+.commission h2 span:nth-of-type(2){
+    color: #535353;
+    font-size: 24px;
+}
+
+
+.commission img{
+    height: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.commission .names{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.commission .name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.commission .name.chairman::after{
+    content: "Esimees";
+    font-weight: normal;
+    color: grey;
+}
+
+.commission .name:not(.chairman):not(.notitle)::after{
+    content: "Aseesimees";
+    font-weight: normal;
+    color: grey;
+}
+
+.name.chairman{
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+
 @media only screen and (max-width: 900px){
     .main-greeting{
         flex-direction: column-reverse;
@@ -294,5 +361,11 @@ button:hover .arrow{
 
     .promise .arrow{
         display: none;
+    }
+
+
+    .commission{
+        flex-direction: column !important;
+        gap: 16px;
     }
 }
