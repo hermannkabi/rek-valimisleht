@@ -148,7 +148,6 @@ button:hover .arrow{
 
 .promise-img{
     height: 350px;
-    aspect-ratio: 0.75;
     object-fit: cover;
     border-radius: 24px;
     transition: border-radius 100ms linear, transform 100ms linear;
@@ -218,9 +217,10 @@ button:hover .arrow{
 .commission h2{
     display: inline-block;
     text-align: center;
+    color: #537074;
 }
 
-.commission h2 span:nth-of-type(1){
+/* .commission h2 span:nth-of-type(1){
     color: #537074;
     font-size: 36px;
 }
@@ -228,7 +228,7 @@ button:hover .arrow{
 .commission h2 span:nth-of-type(2){
     color: #535353;
     font-size: 24px;
-}
+} */
 
 
 .commission img{
@@ -269,6 +269,16 @@ button:hover .arrow{
     transform: scale(1.1);
 }
 
+.names-campaign{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr; 
+    margin: auto;
+    gap: 0 16px;
+}
+
+.names-campaign .name:nth-child(odd):last-child{
+    grid-column: auto / span 2;
+}
 
 @media only screen and (max-width: 900px){
     .main-greeting{
